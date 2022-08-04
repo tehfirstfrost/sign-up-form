@@ -1,0 +1,154 @@
+@font-face{
+    font-family: "Norse Bold";
+    src: url('./fonts/Norse-Bold.otf');
+}
+
+body{
+    padding: 0 20rem;
+    margin: 0;
+    background-color: #1a1919;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    position: relative;
+    display: grid;
+    grid-template-columns: .55fr 1fr;
+    grid-template-rows: 100fr;
+    grid-template-areas: 
+        "aside content1";
+    height: 100vh;
+}
+
+aside{
+    position:relative;
+    grid-area: aside;
+}
+
+.img-wrapper{
+    position: absolute;
+    top: 27.5%;
+    left:0;
+    display: flex;
+    background-color: #0c0c14;
+    opacity: .50;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4rem;
+}
+
+.land{
+    width: 100%;
+    height: 100%;
+}
+.odin{
+    width: 40%;
+}
+
+h1{
+    font-family: "Norse Bold", cursive;
+    font-size: 400%;
+    color:white;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    grid-area: content1;
+    background-color: #f2f2f2;
+
+}
+
+.content p{
+    font-size: 110%;
+    word-spacing: .1em;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+}
+
+span{
+    font-style: italic;
+}
+
+
+.form-wrapper{
+    background-color:#c9cdd3; 
+}
+
+h3{
+    padding-left: 3rem;
+    padding-top:2rem;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:20px;
+    background-color:#c9cdd3; 
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    
+}
+
+label{
+    font-size: 60%;
+    line-height: 0;
+     
+}
+
+
+
+input[type=text], input[type=email], input[type=password], input[type=tel] {
+    display:block;
+    width:230px;
+    border-radius: 5px;
+}
+  
+.btn{
+    width: 250px;
+    height: 50px;
+    background-color: #383838;
+    color:#c9cdd3;
+    opacity: .75;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 3rem;
+    margin-top: 4rem;
+}
+button:hover {
+    background-color: #18181d;
+    color: #ccc;
+}
+  
+form .account, .account a{
+    line-height: 0;
+    font-size: 15px;
+}
+
+.account a {
+    color: #18181d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.account a:hover{
+    color:#ccc;
+}
+
+
+
+input:invalid{
+    border:1px solid #900;
+}
+
+input:valid{
+    
+    border:1px solid lightgreen;
+}
